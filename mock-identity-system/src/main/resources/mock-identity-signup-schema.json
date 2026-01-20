@@ -1,69 +1,154 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
+
   "$defs": {
     "langField": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
           "language": {
-            "type": "string"
+            "type": "string",
+            "enum": ["khm", "eng"]
           },
           "value": {
-            "type": "string"
+            "type": "string",
+            "minLength": 1
           }
         },
-        "required": [
-          "language",
-          "value"
-        ],
+        "required": ["language", "value"],
         "additionalProperties": false
       }
+    },
+
+    "fileObject": {
+      "type": "object",
+      "properties": {
+        "fileName": { "type": "string" },
+        "fileType": { "type": "string" },
+        "fileSizeMB": { "type": "number", "minimum": 0 },
+        "data": { "type": "string" }
+      },
+      "required": ["fileName", "fileType", "data"],
+      "additionalProperties": false
     }
   },
+
   "properties": {
     "individualId": {
       "type": "string",
       "pattern": "\\S"
     },
-    "fullName": {
-      "allOf": [
-        { "$ref": "#/$defs/langField" },
-        {
-          "items": {
-            "properties": {
-              "value": {
-                "pattern": "^(?=.*[^\\s])^(?:[a-zA-ZÀ-ÿ\\s]{1,40}|[ء-ي\\s٩ٱ-ڿﹰ-\uFEFF\u0600-ۿ]{1,40}|[ក-\u17FF᧠-᧿ᨀ-\u1A9F ]{1,40})$"
-              },
-              "language": {
-                "type": "string",
-                "enum": ["khm","eng","fra","ara"]
-              }
-            }
-          }
-        }
-      ]
-    },
-    "preferredLang": {
-        "type": "string",
-        "enum": ["khm","eng","fra","ara"],
-        "nullable": true
-    },
+
     "phone": {
       "type": "string",
       "pattern": "^\\+[1-9]\\d{8,13}$"
     },
+
+    "username": {
+      "type": "string",
+      "allOf": [
+        { "pattern": "^\\d{9,10}$" },
+        { "pattern": "^(?!0).*$" }
+      ]
+    },
+
+    "fullName": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/langField"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "khm": {
+              "type": "string",
+              "pattern": "^[\\u1780-\\u17FF\\u19E0-\\u19FF\\u1A00-\\u1A9F ]{1,30}$"
+            },
+            "eng": {
+              "type": "string",
+              "pattern": "^[a-zA-Z][a-zA-Z ]{1,30}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+
     "password": {
       "type": "string",
-      "pattern": "\\S"
+      "minLength": 8
+    },
+
+    "dob": {
+      "type": "string",
+      "format": "date"
+    },
+
+    "details": {
+      "type": "string"
+    },
+
+    "encodedPhoto": {
+      "type": "string"
+    },
+
+    "photoCapture": {
+      "$ref": "#/$defs/fileObject"
+    },
+
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female", "other"]
+    },
+
+    "passport": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["aadhar", "rental"]
+        },
+        "file": {
+          "$ref": "#/$defs/fileObject"
+        }
+      },
+      "required": ["type", "file"],
+      "additionalProperties": false
+    },
+
+    "photo": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["selfie", "profile"]
+        },
+        "file": {
+          "$ref": "#/$defs/fileObject"
+        }
+      },
+      "required": ["type", "file"],
+      "additionalProperties": false
+    },
+
+    "consent": {
+      "type": "boolean"
+    },
+
+    "preferredLang": {
+      "type": "string",
+      "enum": ["khm", "eng"],
+      "nullable": true
     }
   },
+
   "required": [
     "individualId",
-    "fullName",
-    "phone",
     "password"
   ],
+
   "additionalProperties": true
 }
