@@ -94,10 +94,9 @@
           "eng": "Date of Birth",
           "khm": "ថ្ងៃខែឆ្នាំកំណើត"
         },
-        "minAge": 0,
+        "maxAge": 0,
         "alignmentGroup": "groupE",
-        "required": false,
-        "format": "dd-MM-yyyy"
+        "required": false
       },
       {
         "id": "details",
@@ -131,7 +130,8 @@
           }
         ],
         "alignmentGroup": "groupF",
-        "required": false
+        "required": false,
+        "rows": 4
       },
       {
         "id": "photoCapture",
@@ -149,12 +149,12 @@
           "khm": "In Khmer, Please capture a recent photo using your device's camera."
         },
         "acceptedFileTypes": "image/jpeg , image/jpg , image/png , image/webp",
-        "required": true,
+        "required": false,
         "alignmentGroup": "groupF"
       },
       {
         "id": "gender",
-        "type": "string",
+        "type": "simpleType",
         "subType": "genderVal",
         "controlType": "radio",
         "labelName": {
@@ -181,7 +181,7 @@
           "eng": "Select an Option",
           "khm": "លិខិតឆ្លងដែន"
         },
-        "required": true,
+        "required": false,
         "acceptedFileTypes": [
           "application/pdf",
           "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -203,7 +203,7 @@
           "eng": "Select an Option",
           "khm": "លិខិតឆ្លងដែន"
         },
-        "required": true,
+        "required": false,
         "acceptedFileTypes": ["image/jpeg", "image/jpg", "image/png"],
         "maxFileSizeMB": 5,
         "alignmentGroup": "groupI"
@@ -215,7 +215,7 @@
           "eng": "I agree to <b><a href='#'>Terms & Conditions</a></b> and <b><a href='#'>Privacy Policy</a></b>, to store & process my information as required.",
           "khm": "ខ្ញុំយល់ព្រមតាម<b><a href='#'>លក្ខខណ្ឌ</a></b> និង<b><a href='#'>គោលការណ៍ឯកជនភាព</a></b>របស់ប្រទេសកម្ពុជា ដើម្បីរក្សាទុក និងដំណើរការព័ត៌មានរបស់ខ្ញុំតាមតម្រូវការ។"
         },
-        "required": false,
+        "required": true,
         "alignmentGroup": "groupD"
       }
     ],
