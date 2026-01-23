@@ -155,7 +155,7 @@
       },
     {
         "id": "gender",
-        "type": "simpleType",
+        "type": "string",
         "subType": "genderVal",
         "controlType": "radio",
         "labelName": {
