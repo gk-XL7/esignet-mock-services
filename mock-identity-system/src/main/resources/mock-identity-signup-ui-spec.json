@@ -1,6 +1,4 @@
 {
-  "responseTime": "2026-01-27T05:42:26.140Z",
-  "response": {
     "schema": [
       {
         "id": "phone",
@@ -269,6 +267,4 @@
         "eng": "en"
       }
     }
-  },
-  "errors": []
-}
+  }
