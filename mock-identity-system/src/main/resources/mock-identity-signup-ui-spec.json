@@ -155,7 +155,7 @@
       },
       {
         "id": "gender",
-        "type": "string",
+        "type": "simpleType",
         "subType": "genderVal",
         "controlType": "radio",
         "labelName": {
@@ -167,7 +167,7 @@
           "khm": "ជ្រើសរើសភេទ"
         },
         "alignmentGroup": "groupG",
-        "required": false,
+        "required": true,
         "disabled": false
       },
       {
