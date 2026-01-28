@@ -116,7 +116,8 @@
         },
         "maxAge": 0,
         "alignmentGroup": "groupE",
-        "required": false
+        "required": true,
+        "format": "yyyy/MM/dd"
       },
       {
         "id": "details",
