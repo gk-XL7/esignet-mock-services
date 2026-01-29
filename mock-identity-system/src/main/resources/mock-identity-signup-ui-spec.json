@@ -171,6 +171,28 @@
         "required": true,
         "disabled": false
       },
+        {
+        "id": "passport",
+        "subType": "passportVal",
+        "controlType": "fileupload",
+        "labelName": {
+          "eng": "Passport",
+          "khm": "លិខិតឆ្លងដែន"
+        },
+        "placeholder": {
+          "eng": "Select an Option",
+          "khm": "លិខិតឆ្លងដែន"
+        },
+        "required": false,
+        "acceptedFileTypes": [
+          "application/pdf",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "application/msword",
+          "application/msword"
+        ],
+        "maxFileSizeMB": 1,
+        "alignmentGroup": "groupH"
+      },
       {
         "id": "consent",
         "controlType": "checkbox",
@@ -196,7 +218,17 @@
         "other": {
           "eng": "Other",
           "khm": "ផ្សេងទៀត"
+        },
+      "passportVal": {
+        "aadhar": {
+          "en": "Aadhar ID",
+          "km": "អាយឌីអាហ្កាដារ"
+        },
+        "rental": {
+          "en": "Rental",
+          "km": "ជួល"
         }
+      }
       },
       "i18nValues": {
         "errors": {
