@@ -218,7 +218,8 @@
         "other": {
           "eng": "Other",
           "khm": "ផ្សេងទៀត"
-        },
+        }
+      },
       "passportVal": {
         "aadhar": {
           "en": "Aadhar ID",
