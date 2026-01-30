@@ -231,6 +231,50 @@
         "en": "Caps Lock is on",
         "km": "Caps Lock កំពុងបើក"
       }
+    },
+    "labels": {
+      "password_confirm": {
+        "en": "Confirm Password",
+        "km": "បញ្ជាក់ពាក្យសម្ងាត់"
+      },
+      "capturePhoto": {
+        "en": "Capture Photo",
+        "km": "ថតរូប"
+      },
+      "clickToUpload": {
+        "en": "Click to upload",
+        "km": "ចុចដើម្បីផ្ទុកឡើង"
+      },
+      "docType": {
+        "en": "Document Type",
+        "km": "ប្រភេទឯកសារ"
+      },
+      "docRef": {
+        "en": "Document Reference ID",
+        "km": "លេខយោងឯកសារ"
+      },
+      "proofOfDoc": {
+        "en": "Proof Of Document",
+        "km": "ភស្តុតាងឯកសារ"
+      }
+    },
+    "placeholders": {
+      "password_confirm": {
+        "en": "Enter your confirm password",
+        "km": "បញ្ចូលពាក្យសម្ងាត់ដែលបានបញ្ជាក់"
+      },
+      "docType": {
+        "en": "Select an option",
+        "km": "ជ្រើសជម្រើសមួយ"
+      },
+      "docRef": {
+        "en": "Enter Reference ID here",
+        "km": "បញ្ចូលលេខយោងនៅទីនេះ"
+      },
+      "proofOfDoc": {
+        "en": "Click to upload or drag and drop",
+        "km": "ចុចដើម្បីផ្ទុកឡើង ឬទាញបោះ"
+      }
     }
   },
   "language": {
