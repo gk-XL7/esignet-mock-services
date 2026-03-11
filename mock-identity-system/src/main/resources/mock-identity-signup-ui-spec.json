@@ -252,7 +252,7 @@
         "disabled": false
       }
     ],
-    "resetPasswordChallengeFields": ["email", "qualification", "fullName", "dob", "gender", "consent", "details"],
+    "resetPasswordChallengeFields": ["dob"],
     "allowedValues": {
       "qualification": {
         "highSchool": {
