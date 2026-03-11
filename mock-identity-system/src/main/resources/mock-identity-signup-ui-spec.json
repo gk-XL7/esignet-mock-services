@@ -252,7 +252,7 @@
         "disabled": false
       }
     ],
-    "resetPasswordChallengeFields": ["phone"],
+    "resetPasswordChallengeFields": ["email", "qualification", "fullName", "dob", "gender", "consent", "details"],
     "allowedValues": {
       "qualification": {
         "highSchool": {
@@ -363,11 +363,10 @@
     },
     "language": {
       "mandatory": ["eng", "khm"],
-      "optional": ["ara"],
+      "optional": [],
       "langCodeMap": {
         "khm": "km",
-        "eng": "en",
-        "ara": "ar"
+        "eng": "en"
       }
     }
   }
