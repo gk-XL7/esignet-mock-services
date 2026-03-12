@@ -363,10 +363,11 @@
     },
     "language": {
       "mandatory": ["eng", "khm"],
-      "optional": [],
+      "optional": ["ara"],
       "langCodeMap": {
         "khm": "km",
-        "eng": "en"
+        "eng": "en",
+        "ara": "ar"
       }
     }
   }
