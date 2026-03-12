@@ -58,11 +58,6 @@
       "pattern": "\\S"
     }
   },
-  "required": [
-    "individualId",
-    "fullName",
-    "phone",
-    "password"
-  ],
+  "required": [],
   "additionalProperties": true
 }
