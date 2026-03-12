@@ -253,7 +253,7 @@
         "disabled": false
       }
     ],
-    "resetPasswordChallengeFields": ["fullName"],
+    "resetPasswordChallengeFields": ["dob"],
     "allowedValues": {
       "qualification": {
         "highSchool": {
