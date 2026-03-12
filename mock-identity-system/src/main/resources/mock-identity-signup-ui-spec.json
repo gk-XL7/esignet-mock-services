@@ -28,7 +28,7 @@
           }
         ],
         "required": false,
-        "prefix": ["+855", "+91"],
+        "prefix": ["+91", "+855"],
         "alignmentGroup": "groupA",
         "disabled": false
       },
@@ -252,7 +252,7 @@
         "disabled": false
       }
     ],
-    "resetPasswordChallengeFields": ["dob"],
+    "resetPasswordChallengeFields": ["fullName"],
     "allowedValues": {
       "qualification": {
         "highSchool": {
