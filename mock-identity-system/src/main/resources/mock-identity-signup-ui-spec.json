@@ -254,13 +254,13 @@
       },
       {
         "id": "preferredLang",
-        "controlType": "checkbox",
+        "controlType": "dropdown",
         "labelName": {
           "eng": "eng"
         },
         "required": true,
         "alignmentGroup": "groupJ",
-        "disabled": false
+        "disabled": true
       }
     ],
     "resetPasswordChallengeFields": ["dob"],
@@ -313,10 +313,15 @@
       "photoVal": {
         "selfie": { "en": "Selfie", "km": "រូបថត" },
         "profile": { "en": "Profile", "km": "រូបថត" }
+      },
+      "preferredLang": {
+        "eng": {
+          "eng": "English"
+        }
       }
     },
     "prefilledValues": {
-        "preferredLang": true 
+        "preferredLang": "eng"
     },
     "i18nValues": {
       "errors": {
