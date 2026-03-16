@@ -251,6 +251,16 @@
         "required": false,
         "alignmentGroup": "groupD",
         "disabled": false
+      },
+      {
+        "id": "preferredLang",
+        "controlType": "checkbox",
+        "labelName": {
+          "eng": "English"
+        },
+        "required": true,
+        "alignmentGroup": "groupJ",
+        "disabled": true
       }
     ],
     "resetPasswordChallengeFields": ["dob"],
@@ -305,6 +315,9 @@
         "profile": { "en": "Profile", "km": "រូបថត" }
       }
     },
+    "prefilledValues": {
+        "preferredLang": "eng" 
+    }
     "i18nValues": {
       "errors": {
         "required": {
