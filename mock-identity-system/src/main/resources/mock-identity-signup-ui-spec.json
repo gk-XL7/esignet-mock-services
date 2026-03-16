@@ -260,7 +260,7 @@
         },
         "required": true,
         "alignmentGroup": "groupJ",
-        "disabled": true
+        "disabled": false
       }
     ],
     "resetPasswordChallengeFields": ["dob"],
