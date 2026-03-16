@@ -320,9 +320,6 @@
         }
       }
     },
-    "prefilledValues": {
-        "preferredLang": "eng"
-    },
     "i18nValues": {
       "errors": {
         "required": {
