@@ -27,7 +27,7 @@
             }
           }
         ],
-        "required": false,
+        "required": true,
         "prefix": ["+91", "+855"],
         "alignmentGroup": "groupA",
         "disabled": false
@@ -93,7 +93,7 @@
           "km": "ជាអតិបរមា 30 តួអក្សរត្រូវបានអនុញ្ញាត និងមិនគួរមានលេខ ឬតួអក្សរពិសេសណាមួយឡើយ លើកលែងតែដកឃ្លា។"
         },
         "alignmentGroup": "groupB",
-        "required": false
+        "required": true
       },
       {
         "id": "password",
@@ -111,7 +111,7 @@
           "km": "ប្រើតួអក្សរ លាយជាមួយលេខ ឱ្យបានចំនួន8តួឬច្រើនជាងនេះ"
         },
         "alignmentGroup": "groupC",
-        "required": false
+        "required": true
       },
       {
         "id": "dob",
@@ -248,7 +248,7 @@
           "eng": "I agree to <b><a href='#'>Terms & Conditions</a></b> and <b><a href='#'>Privacy Policy</a></b>, to store & process my information as required.",
           "khm": "ខ្ញុំយល់ព្រមតាម<b><a href='#'>លក្ខខណ្ឌ</a></b> និង<b><a href='#'>គោលការណ៍ឯកជនភាព</a></b>របស់ប្រទេសកម្ពុជា ដើម្បីរក្សាទុក និងដំណើរការព័ត៌មានរបស់ខ្ញុំតាមតម្រូវការ។"
         },
-        "required": false,
+        "required": true,
         "alignmentGroup": "groupD",
         "disabled": false
       },
