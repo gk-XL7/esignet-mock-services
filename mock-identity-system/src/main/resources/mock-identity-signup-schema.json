@@ -54,7 +54,7 @@
     },
     "phone": {
       "type": "string",
-      "pattern": "^\\+91[1-9]\\d{8,10}$"
+      "pattern": "^\\+91[1-9]\\d{8,9}$"
     },
     "password": {
       "type": "string",
