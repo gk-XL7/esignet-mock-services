@@ -25,7 +25,7 @@
   "properties": {
     "individualId": {
       "type": "string",
-      "pattern": "\\S"
+      "pattern": "^\\+91[1-9]\\d{8,9}$"
     },
     "fullName": {
       "allOf": [
@@ -58,7 +58,7 @@
     },
     "password": {
       "type": "string",
-      "pattern": "\\S"
+      "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z\\d]).{8,20}$"
     },
     "dob": {
       "type": "string",
