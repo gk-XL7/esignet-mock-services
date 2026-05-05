@@ -14,10 +14,7 @@
             "type": "string"
           }
         },
-        "required": [
-          "language",
-          "value"
-        ],
+        "required": ["language", "value"],
         "additionalProperties": false
       }
     }
@@ -36,21 +33,21 @@
           "items": {
             "properties": {
               "value": {
-                "pattern": "^(?=.*[^\\s])^(?:[a-zA-ZÀ-ÿ\\s]{1,40}|[ء-ي\\s٩ٱ-ڿﹰ-﻿؀-ۿ]{1,40}|[ក-៿᧠-᧿ᨀ-᪟ ]{1,40})$"
+                "pattern": "^(?=.*[^\\s])^(?:[a-zA-ZÀ-ÿ\\s]{1,40}|[ء-ي\\s٩ٱ-ڿﹰ-؀-ۿ]{1,40}|[ក-៿᧠-᧿ᨀ-᪟ ]{1,40})$"
               },
               "language": {
                 "type": "string",
-                "enum": [
-                  "khm",
-                  "eng",
-                  "fra",
-                  "ara"
-                ]
+                "enum": ["khm", "eng", "fra", "ara"]
               }
             }
           }
         }
       ]
+    },
+    "preferredLang": {
+      "type": "string",
+      "enum": ["khm", "eng", "fra", "ara","hin"],
+      "nullable": true
     },
     "phone": {
       "type": "string",
@@ -60,25 +57,11 @@
       "type": "string",
       "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z\\d]).{8,20}$"
     },
-    "dob": {
-      "type": "string",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
-    },
-    "preferredLang": {
-      "type": "string",
-      "enum": ["khm", "eng", "fra", "ara","hin"],
-      "nullable": true
-    },
     "email": {
-      "type": "string",
-      "format": "email"
-    }
+      "type": "string",
+      "format": "email"
+    }
   },
-  "required": [
-    "fullName",
-    "password",
-    "phone",
-    "preferredLang"
-  ],
+  "required": ["fullName", "phone", "password","preferredLang"],
   "additionalProperties": true
 }
