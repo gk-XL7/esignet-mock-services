@@ -65,19 +65,14 @@
       "pattern": "\\S"
     },
     "preferredLang": {
-        "bioAttributes": [],
-        "validators": [
-            {
-                "validator": "(^eng$|^khm$)",
-                "arguments": [],
-                "type": "regex"
-            }
-        ],
-        "fieldCategory": "pvt",
-        "format": "none",
-        "type": "string",
-        "fieldType": "dynamic"
-    }
+      "type": "string",
+      "enum": ["khm", "eng", "fra", "ara","hin"],
+      "nullable": true
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    }
   },
   "required": [
     "fullName",
